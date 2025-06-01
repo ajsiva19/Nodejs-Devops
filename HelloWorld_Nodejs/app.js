@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 8081;
-const IMAGE_URL = '/images/noventiq-vp.png';
+const IMAGE_URL = '/images/nodejs_cover.png';
 
 // For __dirname in ES module
 const __filename = fileURLToPath(import.meta.url);
