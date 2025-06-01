@@ -5,12 +5,12 @@ FROM docker.io/library/node:slim
 WORKDIR /app
 
 # Copy package files and install dependencies
-COPY package*.json ./
+COPY ../package*.json ./
 RUN npm install
 
 # Copy rest of the app
-COPY public public/
-COPY app.js .
+COPY ../public public./
+COPY ../app.js .
 
 # Expose the app port
 EXPOSE 8080
